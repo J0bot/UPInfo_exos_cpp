@@ -53,5 +53,16 @@ int main(){
     cout << "Hello World" <<endl;
     cout << my_func1(3) <<endl;
     cout << my_func2(2,4) <<endl;
+
+    /**
+     * @brief bails rincés faut vrm pas checker
+     * 
+     */
+    int a=3;
+    int b=6;
+    int c;
+    c=a+b;
+    a=5;
+
     return 0;
 }
