@@ -18,7 +18,8 @@
  */
 using namespace std;
 
-int my_func(int);
+int my_func1(int);
+int my_func2(int,int);
 
 
 
@@ -28,8 +29,19 @@ int my_func(int);
  * @param a le nombre 
  * @return int retourne la puissance au carré de a
  */
-int my_func(int a){
+int my_func1(int a){
     return a*a;
+}
+
+/**
+ * @brief ouais tkt
+ * 
+ * @param a explosé
+ * @param b fois explosé
+ * @return int retourne a * b
+ */
+int my_func2(int a, int b){
+    return a*b;
 }
 
 /**
@@ -39,6 +51,7 @@ int my_func(int a){
  */
 int main(){
     cout << "Hello World" <<endl;
-    cout << my_func(3) <<endl;
+    cout << my_func1(3) <<endl;
+    cout << my_func2(2,4) <<endl;
     return 0;
 }
