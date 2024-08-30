@@ -22,5 +22,12 @@ int main()
     cout << 0xff << endl;
     cout << 0b10101011 << endl;
     cout << 0x45 << endl;
+
+    int c;
+    c = 25;
+    cout << c << endl;
+
+    cout << "and \t\t what ?" << endl;
+
     return 0;
 }
