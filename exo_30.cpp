@@ -13,10 +13,15 @@
 
 using namespace std;
 
+/**
+ * @brief Fonction de calcul de volume
+ *
+ * @return float
+ */
 float calcul_volume(float, float);
 
 /**
- * @brief La fonction main calcule le colume d'un cône
+ * @brief La fonction main de mon programme
  *
  * @return int
  */
@@ -24,10 +29,15 @@ int main()
 {
     cout << "*** Calcul du volume d'un cône ***" << endl;
     /**
-     * @brief variables de rayon et hauteur en float
+     * @brief variables de rayon en float
      *
      */
     float rayon = 0;
+
+    /**
+     * @brief variable de hauteur en float;
+     *
+     */
     float hauteur = 0;
 
     /**
@@ -53,6 +63,13 @@ int main()
     return 0;
 }
 
+/**
+ * @brief Cacul du volume d'un cone
+ *
+ * @param rayon input du rayon en float
+ * @param hauteur input de l'hauteur en float
+ * @return float
+ */
 float calcul_volume(float rayon, float hauteur)
 {
     return M_PI * pow(rayon, 2) * hauteur / 3;
