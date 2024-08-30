@@ -21,5 +21,6 @@ int main()
     cout << "\"ahahd\" and \\ouch\\" << endl;
     cout << 0xff << endl;
     cout << 0b10101011 << endl;
+    cout << 0x45 << endl;
     return 0;
 }
