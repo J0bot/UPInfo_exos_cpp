@@ -13,6 +13,8 @@
 
 using namespace std;
 
+float calcul_volume(float, float);
+
 /**
  * @brief La fonction main calcule le colume d'un cône
  *
@@ -41,7 +43,7 @@ int main()
      * @brief Calcul du volume en float, utilisation de la lib cmath pour M_PI et pow()
      *
      */
-    float volume = M_PI * pow(rayon, 2) * hauteur / 3;
+    float volume = calcul_volume(rayon, hauteur);
 
     /**
      * @brief Affichage du volume
@@ -49,4 +51,9 @@ int main()
      */
     cout << "Volume [m3] : " << volume << endl;
     return 0;
+}
+
+float calcul_volume(float rayon, float hauteur)
+{
+    return M_PI * pow(rayon, 2) * hauteur / 3;
 }
