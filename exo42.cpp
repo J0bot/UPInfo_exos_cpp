@@ -24,11 +24,13 @@ int main()
     cout << rand_numb << endl;
 
     int input_user;
+    int etapes;
 
     while (input_user != rand_numb)
     {
         cout << "Trouvez le nombre mystère : ";
         cin >> input_user;
+        etapes++;
 
         if (input_user <= 0)
         {
@@ -46,7 +48,7 @@ int main()
         }
         else if (input_user == rand_numb)
         {
-            cout << "BRAVO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+            cout << "BRAVO! Tu l'as fait en " << etapes << " étapes !" << endl;
             return 0;
         }
         else
